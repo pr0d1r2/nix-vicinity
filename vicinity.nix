@@ -6,6 +6,8 @@ pkgs.python313Packages.buildPythonPackage {
 
   inherit src;
 
+  env.SETUPTOOLS_SCM_PRETEND_VERSION = "0.4.4";
+
   build-system = with pkgs.python313Packages; [
     setuptools
     setuptools-scm
